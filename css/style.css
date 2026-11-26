@@ -1472,10 +1472,6 @@ footer {
         min-width: 0;
     }
 
-    .aboutme *{
-        max-width: 100%;
-        min-width: 0;
-    }
 
     .aboutme .personal,
     .aboutme .education,
@@ -1483,6 +1479,7 @@ footer {
     .aboutme .experiences {
         margin: 12px;
         padding: 18px;
+        min-width: 0;
     }
 
     .aboutme .infos {
@@ -1494,6 +1491,10 @@ footer {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .aboutme .infos > * {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
     .gallery .moments {
         margin: 12px;
         padding: 18px;
@@ -1561,7 +1562,7 @@ footer {
     .hobby-cards,
     .dream-cards,
     .bucket-cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr;
     }
 
 }
