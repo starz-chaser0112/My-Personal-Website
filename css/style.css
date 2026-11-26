@@ -25,6 +25,7 @@ html {
         #191970;
     background-attachment: fixed;
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 body {
