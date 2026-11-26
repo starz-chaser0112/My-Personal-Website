@@ -360,108 +360,6 @@ footer p {
     margin: 0;
 }
 
-
-@media (max-width: 768px) {
-
-    .home,
-    .explore {
-        width: 92%;
-        padding: 0 15px;
-        min-height: 55px;
-    }
-
-    .home h1,
-    .explore h1 {
-        font-size: 18px;
-    }
-
-    .home .nav ul {
-        gap: 5px;
-    }
-
-    .home .nav a {
-        padding: 8px;
-        font-size: 12px;
-    }
-
-    .explore a {
-        padding: 5px;
-        gap: 5px;
-    }
-
-    .explore a img {
-        width: 22px;
-        height: 22px;
-    }
-
-    .explore a p {
-        font-size: 12px;
-    }
-
-
-    #overview {
-        width: 95%;
-        padding: 25px;
-    }
-
-    .intro {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .intro img {
-        width: 100%;
-        max-width: 280px;
-        height: 300px;
-        margin: auto;
-    }
-
-    .intro-text h1 {
-        font-size: 45px;
-    }
-
-
-    #explore {
-        width: 90%;
-    }
-
-    #infos {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    #infos a {
-        min-height: 130px;
-        border-radius: 30px;
-    }
-
-    #infos img {
-        max-width: 40px;
-    }
-}
-
-@media (max-width: 400px) {
-
-    .home h1,
-    .explore h1 {
-        font-size: 15px;
-    }
-
-    .home .nav a {
-        font-size: 10px;
-        padding: 7px;
-    }
-
-    .explore a p {
-        font-size: 10px;
-    }
-
-    #infos {
-        grid-template-columns: 1fr;
-    }
-}
-
-
 .contact-layout {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -689,21 +587,6 @@ footer p {
         h4 {
             margin: 0;
         }
-    }
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 850px) {
-    .contact-layout {
-        grid-template-columns: 1fr;
-        width: 95%;
-    }
-}
-
-@media (max-width: 500px) {
-    .contact .links {
-        grid-template-columns: 1fr;
     }
 }
 
@@ -1202,22 +1085,8 @@ footer p {
     }
 }
 
-@media (max-width: 768px) {
-    .favorites {
-        width: 95%;
 
-        .taste .favs {
-            grid-template-columns: 1fr;
-        }
 
-        .color,
-        .music,
-        .taste,
-        .places {
-            padding: 18px;
-        }
-    }
-}
 
 
 .dreams-page {
@@ -1312,6 +1181,7 @@ footer p {
             margin: 0;
             font-size: 14px;
             line-height: 1.6;
+            font-weight: bold;
         }
     }
 }
@@ -1406,43 +1276,11 @@ footer p {
             margin: 0;
             font-size: 14px;
             line-height: 1.6;
+            font-weight: bold;
         }
     }
 }
 
-
-@media (max-width: 768px) {
-
-    .hobbies-page,
-    .dreams-page {
-        width: 95%;
-
-        .hobby-section,
-        .dream-section,
-        .bucket-section {
-            padding: 18px;
-        }
-
-        .hobby-cards,
-        .dream-cards,
-        .bucket-cards {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-    }
-}
-
-@media (max-width: 480px) {
-
-    .hobbies-page,
-    .dreams-page {
-
-        .hobby-cards,
-        .dream-cards,
-        .bucket-cards {
-            grid-template-columns: 1fr;
-        }
-    }
-}
 
 footer {
     display: flex;
@@ -1454,3 +1292,220 @@ footer {
     height: 50px;
     padding: 20px 25px;
 }
+
+
+@media (max-width: 850px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .home,
+    .explore {
+        width: 92%;
+        padding: 0 15px;
+        min-height: 55px;
+    }
+
+    .home h1,
+    .explore h1 {
+        font-size: 18px;
+    }
+
+    .home .nav ul {
+        gap: 5px;
+    }
+
+    .home .nav a {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .explore a {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .explore a img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .explore a p {
+        font-size: 12px;
+    }
+
+    #overview {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .intro img {
+        width: 100%;
+        max-width: 280px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .intro-text h1 {
+        font-size: 45px;
+    }
+
+    #explore {
+        width: 90%;
+    }
+
+    #infos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    #infos a {
+        min-height: 130px;
+        border-radius: 30px;
+    }
+
+    #infos img {
+        max-width: 40px;
+    }
+
+    .contact-layout {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+
+    .contact,
+    .contactform {
+        min-height: auto;
+    }
+
+    .aboutme {
+        width: 95%;
+    }
+
+    .aboutme .personal,
+    .aboutme .education,
+    .aboutme .facts,
+    .aboutme .experiences {
+        margin: 12px;
+        padding: 18px;
+    }
+
+    .aboutme .infos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .aboutme .education .infos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery .moments {
+        margin: 12px;
+        padding: 18px;
+    }
+
+    .gallery .pictures {
+        column-count: 2;
+    }
+
+    .favorites {
+        width: 95%;
+    }
+
+    .favorites .color,
+    .favorites .music,
+    .favorites .taste,
+    .favorites .places {
+        padding: 18px;
+    }
+
+    .favorites .taste .favs {
+        grid-template-columns: 1fr;
+    }
+
+    .music .favs {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hobbies-page,
+    .dreams-page {
+        width: 95%;
+    }
+
+    .hobby-section,
+    .dream-section,
+    .bucket-section {
+        padding: 18px;
+    }
+
+    .hobby-cards,
+    .dream-cards,
+    .bucket-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .home h1,
+    .explore h1 {
+        font-size: 15px;
+    }
+
+    .home .nav a {
+        font-size: 10px;
+        padding: 7px;
+    }
+
+    .explore a p {
+        font-size: 10px;
+    }
+
+    .intro-text h1 {
+        font-size: 38px;
+    }
+
+    #infos {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .links {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutme .infos,
+    .aboutme .education .infos {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery .pictures {
+        column-count: 1;
+    }
+
+    .music .favs {
+        grid-template-columns: 1fr;
+    }
+    
+    .hobby-cards,
+    .dream-cards,
+    .bucket-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
