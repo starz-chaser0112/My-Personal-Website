@@ -62,6 +62,10 @@ body {
     color: white;
     background: transparent;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    p {
+        font-weight: 600;
+    }
 }
 
 main {
@@ -660,11 +664,12 @@ footer p {
 
                 p {
                     margin: 5px;
-                    background: rgba(255, 255, 255, 0.4);
+                    background: rgba(255, 255, 255, 0.15);
                     border-radius: 15px;
                     padding: 10px;
                     width: fit-content;
                     margin: 10px auto;
+                    
 
                 }
 
@@ -942,9 +947,39 @@ footer p {
             margin: -15px 0 25px;
         }
 
-        .items {
-            min-height: 250px;
+        .favs {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-areas:
+                "genres artists"
+                "tracks tracks";
+            align-items: stretch;
+            gap: 20px;
+
+            > .items:nth-child(1) {
+                grid-area: genres;
+            }
+
+            > .items:nth-child(2) {
+                grid-area: artists;
+            }
+
+            > .items:nth-child(3) {
+                grid-area: tracks;
+            }> .items:nth-child(1) {
+                grid-area: genres;
+            }
+
+            > .items:nth-child(2) {
+                grid-area: artists;
+            }
+
+            > .items:nth-child(3) {
+                grid-area: tracks;
+            }
         }
+
+        
 
         .genres,
         .tracks,
@@ -978,6 +1013,23 @@ footer p {
         }
 
         .tracks {
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.35);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+                border-radius: 15px;
+                display: block;
+            }
+
             img {
                 width: 45px;
                 height: 45px;
@@ -1014,6 +1066,29 @@ footer p {
                 object-fit: cover;
                 border-radius: 10px;
                 flex-shrink: 0;
+            }
+        }
+
+        .tracks {
+            display: block;
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            margin: 0;
+
+            background: rgba(255, 255, 255, 0.35);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+
+            box-sizing: border-box;
+            overflow: hidden;
+
+            iframe {
+                display: block;
+                width: 100%;
+                height: 152px !important;
+                border: none;
+                border-radius: 12px;
             }
         }
     }
@@ -1177,11 +1252,11 @@ footer p {
         }
 
         p {
-            color: midnightblue;
+            color: rgb(149, 250, 255);
             margin: 0;
             font-size: 14px;
             line-height: 1.6;
-            font-weight: bold;
+            font-weight: 500;
         }
     }
 }
@@ -1272,11 +1347,11 @@ footer p {
         }
 
         p {
-            color: midnightblue;
+            color: rgb(149, 250, 255);;
             margin: 0;
             font-size: 14px;
             line-height: 1.6;
-            font-weight: bold;
+            font-weight: 500;
         }
     }
 }
@@ -1286,6 +1361,7 @@ footer {
     display: flex;
     background: white;
     color: midnightblue;
+    font-weight: bold;
     border-radius: 25px 25px 0 0;
     max-width: 1800px;
     width: 100%;
