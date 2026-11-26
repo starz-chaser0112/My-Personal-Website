@@ -1469,6 +1469,12 @@ footer {
 
     .aboutme {
         width: 95%;
+        min-width: 0;
+    }
+
+    .aboutme *{
+        max-width: 100%;
+        min-width: 0;
     }
 
     .aboutme .personal,
@@ -1497,8 +1503,33 @@ footer {
         column-count: 2;
     }
 
+    .gallery .photos {
+        width: 100%;
+        max-width: 100%;
+        break-inside: avoid;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        caption {
+            width: 100%;
+            overflow-wrap: anywhere;
+        }
+    }
+
     .favorites {
         width: 95%;
+
+        .items {
+            min-width: 0;
+
+            h3, h4, p {
+                overflow-wrap: anywhere;
+            }
+        }
     }
 
     .favorites .color,
